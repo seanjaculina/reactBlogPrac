@@ -5,7 +5,7 @@ const Comment = (props) =>{
         return(
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="avatar" src={faker.image.avatar()}/>
+                    <img alt="avatar" src={props.image}/>
                 </a>
                 <div className="content">
                     <a href="/" className="author">
@@ -13,7 +13,7 @@ const Comment = (props) =>{
                     </a>
                     <div className="metadata">
                         <span className="date">
-                            {faker.time.recent}
+                            {props.timeAgo}
                         </span>
                     </div>
                     <div className="text">
