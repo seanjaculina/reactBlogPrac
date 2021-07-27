@@ -17,7 +17,7 @@ const Comment = (props) =>{
                         </span>
                     </div>
                     <div className="text">
-                        Nice Blog Post
+                        {props.comment}
                     </div>
                 </div>
             </div>
