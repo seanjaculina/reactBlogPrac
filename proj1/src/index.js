@@ -2,7 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () =>{
-    return <div>Hello!</div>
+    return(
+        <div className="ui container comments">
+            <div className="comment">
+                <a href="/" className="avatar">
+                    <img alt="avatar"/>
+                </a>
+            </div>
+        </div>
+    )
 }
 
 ReactDOM.render(<App/>, document.querySelector('#root'));
